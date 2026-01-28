@@ -153,7 +153,7 @@ with block_edit:
                 st.session_state.email_elements[i]['content'] = new_link
             if st.button(f"Remove {element['type'].title()} {i+1}", key=f'remove_{i}'):
                 st.session_state.email_elements.pop(i)
-                st.experimental_rerun()
+                st.rerun()
 
 # # Column 3: Additional options or preview of the email (not used)
 # with preview_area:
